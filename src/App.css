@@ -1,0 +1,10 @@
+body{
+    background-color: black;
+}
+.texto-animado {
+    border-right: 4px solid;
+    animation: typing 1s steps(56) forwards, blink .5s infinite step-end alternate;
+}
+@keyframes blink {
+    50% {border-color: transparent}
+}
