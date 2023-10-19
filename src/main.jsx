@@ -4,14 +4,14 @@ import { createHashRouter, RouterProvider, } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import './App.css';
-import {Titulo, Acerca, Botones, Botones2} from './Index'
+import {Titulo, Acerca,Botones, BotonesProye, BotonesContac} from './Index'
 import { TitProyectos, Pro } from './proyectos';
 import { Contacto } from './contactos';
 
 const router = createHashRouter([
   {path:'/', element: <> <Titulo/> <Acerca/> <Botones/> </>},
-  {path:'/Proyectos', element: <> <Botones2/> <TitProyectos/> <Pro/> </>},
-  {path:'/Contacto', element: <> <Botones2/> <Contacto/> </>},
+  {path:'/Proyectos', element: <> <BotonesProye/> <TitProyectos/> <Pro/> </>},
+  {path:'/Contacto', element: <> <BotonesContac/> <Contacto/> </>},
   {path:'*', element: <h1 className='text-danger text-center my-5'>Sector no encontrado</h1>}
 ]);
 
