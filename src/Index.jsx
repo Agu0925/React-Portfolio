@@ -7,7 +7,7 @@ import css from './assets/Iconos/css.ico'
 import bs from './assets/Iconos/bs.ico'
 import js from './assets/Iconos/js.ico'
 import node from './assets/Iconos/node.ico'
-import rimg from './assets/Iconos/rimg.ico'
+import rimg from './assets/imgr.ico'
 //Titulo ---------------------------
 const TextoMaquinaEscribir = ({ text }) => {
   const [displayText, setDisplayText] = useState("");
