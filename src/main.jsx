@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider, } from 'react-router-dom';
+import { createHashRouter, RouterProvider, } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import './App.css';
@@ -8,7 +8,7 @@ import {Titulo, Acerca, Botones, Botones2} from './Index'
 import { TitProyectos, Pro } from './proyectos';
 import { Contacto } from './contactos';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {path:'/', element: <> <Titulo/> <Acerca/> <Botones/> </>},
   {path:'/Proyectos', element: <> <Botones2/> <TitProyectos/> <Pro/> </>},
   {path:'/Contacto', element: <> <Botones2/> <Contacto/> </>},
