@@ -1,4 +1,8 @@
 import ReactPlayer from "react-player";
+import { Link } from "react-router-dom";
+import vid from './assets/Stock.mp4'
+import pica from './assets/Picapalos2.png'
+import ahs from './assets/AhlerSolutions.png'
 //Titulo
 export const TitProyectos = () => {
     return (
@@ -59,30 +63,33 @@ export const Carousel = () => {
 };
 //Proyectos
 export const Pro = () => {
-    let img = `/React-Portfolio/src/assets//Picapalos2.png`
-    let img2 = `/React-Portfolio/src/assets/AhlerSolutions2.png`
+    let irId = (id) => {
+        const releventDiv = document.getElementById(id);
+        // behavior: "smooth" parameter for smooth movement
+        releventDiv.scrollIntoView({behavior: "smooth"});
+      }
     return (
         <div className="container text-center text-white mt-4">
             <div className="row my-4">
                 <div className="col-md-6 m-auto">
-                    <img src={img} alt="" className="rounded-circle w-50" />
+                    <img src={pica} alt="" className="rounded-circle w-50" />
                     <h2 className="fw-normal">El Picapalos</h2>
                     <p>Pagina creada con react para Centro de Maderas que cuenta con carrusel de imagenes, categorias de sus productos, buscador de productos y apartado de contacto.</p>
                     <p><a className="btn btn-primary" href="https://elpicapalos.com" target="_blank">Ir al Sitio »</a></p>
                 </div>
                 <div className="col-md-6 m-auto">
-                    <img src={img2} alt="" className="rounded-circle w-50" />
+                    <img src={ahs} alt="" className="rounded-circle w-50" width="400px" height='250px'/>
                     <h2 className="fw-normal">Stock y Producción</h2>
                     <p>
                         Sistema facil de usar y muy personalizable cuenta con vinculacion de productos, actualizacion en tiempo real, gestion de producción, seguimiento de inventario y sistema de Usuarios.
                     </p>
-                    <p><a className="btn btn-primary" href="#stock">Ver Detalles</a></p>
+                    <p><btn className="btn btn-primary" onClick={() => irId("stock")} >Ver Detalles</btn></p>
                 </div>
             </div>
             <hr />
             <div className="row my-4" id='stock'>
                 <div className="mb-3">
-                    <ReactPlayer className='w-100' controls loop playing={true} url='/React-Portfolio/src/assets/Stock.mp4' />
+                    <ReactPlayer className='w-100' controls loop playing={true} url={vid} />
                 </div>
                 <div className="">
                     <p className="lead">El Sistema de Gestión de Stock y Producción es una herramienta versátil y eficiente diseñada para optimizar el control de inventario y facilitar la gestión de productos en su empresa. Una de las características sobresalientes de este programa es la capacidad de vincular productos "hijos" a productos "padres", lo que permite un control más preciso y sencillo del stock. Cuando se realiza una venta o un ajuste en el inventario de un producto "padre", automáticamente se refleja en los productos "hijos", garantizando una actualización precisa del stock en tiempo real.
