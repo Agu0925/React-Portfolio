@@ -1,3 +1,4 @@
+import ReactPlayer from "react-player";
 //Titulo
 export const TitProyectos = () => {
     return (
@@ -75,17 +76,17 @@ export const Pro = () => {
                     <p>
                         Sistema facil de usar y muy personalizable cuenta con vinculacion de productos, actualizacion en tiempo real, gestion de producción, seguimiento de inventario y sistema de Usuarios.
                     </p>
-                    <p><a className="btn btn-primary" href="#">Ver Detalles</a></p>
+                    <p><a className="btn btn-primary" href="#stock">Ver Detalles</a></p>
                 </div>
             </div>
             <hr />
-            <div className="row my-4">
-                <div className="col-md-7 m-auto">
+            <div className="row my-4" id='stock'>
+                <div className="mb-3">
+                    <ReactPlayer className='w-100' controls loop playing={true} url='src/assets/Stock.mp4' />
+                </div>
+                <div className="">
                     <p className="lead">El Sistema de Gestión de Stock y Producción es una herramienta versátil y eficiente diseñada para optimizar el control de inventario y facilitar la gestión de productos en su empresa. Una de las características sobresalientes de este programa es la capacidad de vincular productos "hijos" a productos "padres", lo que permite un control más preciso y sencillo del stock. Cuando se realiza una venta o un ajuste en el inventario de un producto "padre", automáticamente se refleja en los productos "hijos", garantizando una actualización precisa del stock en tiempo real.
                         Además de la gestión de stock, el programa incluye una potente función de producción. Al ingresar los productos que desea fabricar, el sistema generará una lista detallada de todos los materiales necesarios para completar la producción. Esto simplifica el proceso de planificación y abastecimiento de insumos, evitando pérdidas de tiempo y recursos innecesarios.</p>
-                </div>
-                <div className="col-md-5">
-                    <svg className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
                 </div>
             </div>
         </div>
