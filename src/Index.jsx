@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import yo from './assets/yo.png'
-//Imagenes
-const Imagen = ({ i }) => {
-  let img = `https://agu0925.github.io/React-Portfolio/assets/iconos/${i}.ico`
-  return (
-    <img className="w-100" src={img} alt={i} />
-  )
-};
+import git from './assets/Iconos/github.ico'
+import html from './assets/Iconos/html.ico'
+import css from './assets/Iconos/css.ico'
+import bs from './assets/Iconos/bs.ico'
+import js from './assets/Iconos/js.ico'
+import node from './assets/Iconos/node.ico'
+import react from './assets/Iconos/react.ico'
 //Titulo ---------------------------
 const TextoMaquinaEscribir = ({ text }) => {
   const [displayText, setDisplayText] = useState("");
@@ -56,25 +56,25 @@ export const Acerca = () => {
             <span className="row text-center">
               <p className="h4 my-3">Estas son las tecnologias que manejo</p>
               <div className="col">
-                <Imagen i={'github'} />
+                <img className="w-100" src={git} alt="git" />
               </div>
               <div className="col">
-                <Imagen i={'html'} />
+                <img className="w-100" src={html} alt="html" />
               </div>
               <div className="col">
-                <Imagen i={'css'} />
+                <img className="w-100" src={css} alt="css" />
               </div>
               <div className="col">
-                <Imagen i={'bs'} />
+                <img className="w-100" src={bs} alt="bs" />
               </div>
               <div className="col">
-                <Imagen i={'js'} />
+                <img className="w-100" src={js} alt="js" />
               </div>
               <div className="col">
-                <Imagen i={'node'} />
+                <img className="w-100" src={node} alt="node" />
               </div>
               <div className="col">
-                <Imagen i={'react'} />
+                <img className="w-100" src={react} alt="react" />
               </div>
             </span>
           </p>
