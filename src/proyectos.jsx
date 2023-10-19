@@ -59,8 +59,8 @@ export const Carousel = () => {
 };
 //Proyectos
 export const Pro = () => {
-    let img = `src/assets//Picapalos2.png`
-    let img2 = `src/assets/AhlerSolutions2.png`
+    let img = `/React-Portfolio/src/assets//Picapalos2.png`
+    let img2 = `/React-Portfolio/src/assets/AhlerSolutions2.png`
     return (
         <div className="container text-center text-white mt-4">
             <div className="row my-4">
@@ -82,7 +82,7 @@ export const Pro = () => {
             <hr />
             <div className="row my-4" id='stock'>
                 <div className="mb-3">
-                    <ReactPlayer className='w-100' controls loop playing={true} url='src/assets/Stock.mp4' />
+                    <ReactPlayer className='w-100' controls loop playing={true} url='/React-Portfolio/src/assets/Stock.mp4' />
                 </div>
                 <div className="">
                     <p className="lead">El Sistema de Gestión de Stock y Producción es una herramienta versátil y eficiente diseñada para optimizar el control de inventario y facilitar la gestión de productos en su empresa. Una de las características sobresalientes de este programa es la capacidad de vincular productos "hijos" a productos "padres", lo que permite un control más preciso y sencillo del stock. Cuando se realiza una venta o un ajuste en el inventario de un producto "padre", automáticamente se refleja en los productos "hijos", garantizando una actualización precisa del stock en tiempo real.
