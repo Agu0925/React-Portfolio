@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import yo from './assets/yo.png'
 //Imagenes
 const Imagen = ({ i }) => {
-  let img = `/React-Portfolio/src/assets/iconos/${i}.ico`
+  let img = `/React-Portfolio/assets/iconos/${i}.ico`
   return (
     <img className="w-100" src={img} alt={i} />
   )
