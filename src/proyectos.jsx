@@ -60,29 +60,34 @@ export const Carousel = () => {
 export const Pro = () => {
     let img = `src/assets//Picapalos2.png`
     let img2 = `src/assets/AhlerSolutions2.png`
-    let img3 = `src/assets/iconos/js.ico`
     return (
-        <div className="container text-center mt-4">
-            <div className="row">
-                <div className="col-6 text-white">
+        <div className="container text-center text-white mt-4">
+            <div className="row my-4">
+                <div className="col-md-6 m-auto">
                     <img src={img} alt="" className="rounded-circle w-50" />
                     <h2 className="fw-normal">El Picapalos</h2>
                     <p>Pagina creada con react para Centro de Maderas que cuenta con carrusel de imagenes, categorias de sus productos, buscador de productos y apartado de contacto.</p>
-                    <p><a className="btn btn-secondary" href="https://elpicapalos.com" target="_blank">Ir al Sitio »</a></p>
+                    <p><a className="btn btn-primary" href="https://elpicapalos.com" target="_blank">Ir al Sitio »</a></p>
                 </div>
-                <div className="col-6 text-white">
+                <div className="col-md-6 m-auto">
                     <img src={img2} alt="" className="rounded-circle w-50" />
                     <h2 className="fw-normal">Stock y Producción</h2>
                     <p>
-                        Sistema facil de usar y muy personalizable cuenta con vinculacion de productos, actualizacion en timpo real, gestion de producción, seguimiento de inventario y sistema de Usuarios.
+                        Sistema facil de usar y muy personalizable cuenta con vinculacion de productos, actualizacion en tiempo real, gestion de producción, seguimiento de inventario y sistema de Usuarios.
                     </p>
-                    <p><a className="btn btn-secondary" href="#">Ver Detalles »</a></p>
+                    <p><a className="btn btn-primary" href="#">Ver Detalles</a></p>
+                </div>
+            </div>
+            <hr />
+            <div className="row my-4">
+                <div className="col-md-7 m-auto">
+                    <p className="lead">El Sistema de Gestión de Stock y Producción es una herramienta versátil y eficiente diseñada para optimizar el control de inventario y facilitar la gestión de productos en su empresa. Una de las características sobresalientes de este programa es la capacidad de vincular productos "hijos" a productos "padres", lo que permite un control más preciso y sencillo del stock. Cuando se realiza una venta o un ajuste en el inventario de un producto "padre", automáticamente se refleja en los productos "hijos", garantizando una actualización precisa del stock en tiempo real.
+                        Además de la gestión de stock, el programa incluye una potente función de producción. Al ingresar los productos que desea fabricar, el sistema generará una lista detallada de todos los materiales necesarios para completar la producción. Esto simplifica el proceso de planificación y abastecimiento de insumos, evitando pérdidas de tiempo y recursos innecesarios.</p>
+                </div>
+                <div className="col-md-5">
+                    <svg className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
                 </div>
             </div>
         </div>
-    );
+    )
 };
-// Vinculación de Productos: Conexión de productos "hijos" a productos "padre" para un seguimiento de stock integrado.
-// Actualización en Tiempo Real: Cambios en el stock reflejados automáticamente para precisión y eficiencia.
-// Gestión de Producción: Generación de listas de materiales para simplificar la planificación de la fabricación.
-// Seguimiento de Inventario: Detalles sobre stock disponible, alertas de stock bajo y seguimiento de movimientos.
