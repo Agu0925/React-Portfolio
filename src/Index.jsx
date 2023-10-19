@@ -7,7 +7,7 @@ import css from './assets/Iconos/css.ico'
 import bs from './assets/Iconos/bs.ico'
 import js from './assets/Iconos/js.ico'
 import node from './assets/Iconos/node.ico'
-import react from './assets/Iconos/react.ico'
+import reactimg from './assets/Iconos/react.ico'
 //Titulo ---------------------------
 const TextoMaquinaEscribir = ({ text }) => {
   const [displayText, setDisplayText] = useState("");
@@ -74,7 +74,7 @@ export const Acerca = () => {
                 <img className="w-100" src={node} alt="node" />
               </div>
               <div className="col">
-                <img className="w-100" src={react} alt="react" />
+                <img className="w-100" src={reactimg} alt="react" />
               </div>
             </span>
           </p>
