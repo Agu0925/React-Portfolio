@@ -43,37 +43,39 @@ export const Titulo = () => {
 export const Acerca = () => {
   return (
     <>
-      <h2 className="text-center text-white my-4">Acerca de mi</h2>
+      <h2 className="text-center text-white my-4 d-none d-md-block">Acerca de mi</h2>
       <div className="row m-auto">
         <div className="col-md-5 m-auto text-center">
           <img src={yo} className="w-75 rounded-circle" alt="MiFoto" />
         </div>
         <div className="col-md-7 m-auto text-white">
           <p className="lead m-auto my-4">
-            Soy de Uruguay tengo 26 años desde los 14 empecé a interesarme por la informática y completé 2 cursos uno de programación .NET Visual Basic y otro de Reparación Pc hardware/software.
-            A los 16 comencé a trabajar en la empresa familiar donde aprendí muchísimo pero en la industria de la carpintería, allí trabaje con maquinas cnc donde me recordó el mundo de la programación y lo que me gustaba resolver problemas o crear herramientas.
-            Gracias a esto hoy me siento preparado y estoy decidido a trabajar como desarrollador.
+            <span className="d-none d-md-block">
+              Soy de Uruguay tengo 26 años desde los 14 empecé a interesarme por la informática y completé 2 cursos uno de programación .NET Visual Basic y otro de Reparación Pc hardware/software.
+              A los 16 comencé a trabajar en la empresa familiar donde aprendí muchísimo pero en la industria de la carpintería, allí trabaje con maquinas cnc donde me recordó el mundo de la programación y lo que me gustaba resolver problemas o crear herramientas.
+              Gracias a esto hoy me siento preparado y estoy decidido a trabajar como desarrollador.
+            </span>
             <span className="row text-center">
               <p className="h4 my-3">Estas son las tecnologias que manejo</p>
-              <div className="col">
+              <div className="col-md col-3 m-auto">
                 <img className="w-100" src={git} alt="git" />
               </div>
-              <div className="col">
+              <div className="col-md col-3 m-auto">
                 <img className="w-100" src={html} alt="html" />
               </div>
-              <div className="col">
+              <div className="col-md col-3 m-auto">
                 <img className="w-100" src={css} alt="css" />
               </div>
-              <div className="col">
+              <div className="col-md col-3 m-auto">
                 <img className="w-100" src={bs} alt="bs" />
               </div>
-              <div className="col">
+              <div className="col-md col-3 m-auto">
                 <img className="w-100" src={js} alt="js" />
               </div>
-              <div className="col">
+              <div className="col-md col-3 m-auto">
                 <img className="w-100" src={node} alt="node" />
               </div>
-              <div className="col">
+              <div className="col-md col-3 m-auto">
                 <img className="w-100" src={rimg} alt="react" />
               </div>
             </span>
@@ -106,7 +108,7 @@ export const Botones = () => {
       <div className="d-md-none text-center">
         <div className="row">
           <div className="col-4 m-auto">
-            <Link className="btn btn-primary py-md-3" to="/Contacto">Contactame</Link>
+            <Link className="btn btn-primary py-3" to="/Contacto">Contactame</Link>
           </div>
           <div className="col-4 m-auto">
             <a className="btn" href="https://www.linkedin.com/in/agustin-ahlers/" target="_blank">
@@ -159,7 +161,7 @@ export const BotonesContac = () => {
           </a>
         </div>
         <div className="col-4 m-auto">
-          <Link className="btn btn-primary py-3" to="/Proyectos">Mis Proyectos</Link>
+          <Link className="btn btn-primary py-3" to="/Proyectos">Proyectos</Link>
         </div>
       </div>
     </div>
