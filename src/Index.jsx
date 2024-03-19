@@ -53,7 +53,7 @@ export const Acerca = () => {
             <span className="d-none d-md-block">
               Soy de Uruguay tengo 26 años desde los 14 empecé a interesarme por la informática y completé 2 cursos uno de programación .NET Visual Basic y otro de Reparación Pc hardware/software.
               A los 16 comencé a trabajar en la empresa familiar donde aprendí muchísimo pero en la industria de la carpintería, allí trabaje con maquinas cnc donde me recordó el mundo de la programación y lo que me gustaba resolver problemas o crear herramientas.
-              Gracias a esto hoy me siento preparado y estoy decidido a trabajar como desarrollador.
+              Gracias a esto hoy me prepare y estoy decidido a trabajar como desarrollador.
             </span>
             <span className="row text-center">
               <p className="h4 my-3">Estas son las tecnologias que manejo</p>
